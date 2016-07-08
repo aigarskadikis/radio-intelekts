@@ -23,7 +23,7 @@ generatenewsong=1
 #list all songs in playlist without skits
 allmusic=$(mpc ls | grep -v "^Speech")
 
-#count how many songs is in playlist now
+#caunt how many songs is in playlist now
 skaits=$(mpc playlist | wc -l)
 
 #tell the intelect that we do not know what is the next song
@@ -89,7 +89,7 @@ fi
 
 
 #check if the last two songs include skit
-last2songs=$(mpc playlist | tail -2)
+last2songs=$(mpc playlist | tail -3)
 echo "$last2songs" | grep "^derek\|^Radio Alise" > /dev/null
 if [ $? -eq 0 ]; then
 insertskit=0
@@ -164,4 +164,5 @@ sleep 5
 echo "hello"
 
 done
+
 
