@@ -1,5 +1,11 @@
 #!/bin/sh
 
+#this code is tested un fresh 2015-11-21-raspbian-jessie-lite Raspberry Pi image
+#sudo raspi-config -> extend partition -> reboot
+#sudo su
+#apt-get update -y && apt-get upgrade -y && apt-get install git -y
+#git clone https://github.com/catonrug/radio-intelekts.git && cd radio-intelekts && cp intelekts.sh /home/pi
+
 #it is 5:55 in the morning
 
 #lets clean existing log file
