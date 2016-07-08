@@ -1,4 +1,7 @@
-sudo su
+#!/bin/sh
+
+cp intelekts.sh /home/pi
+chmod 755 /home/pi/intelekts.sh
 
 cat > /etc/init.d/radio << EOF
 #!/bin/sh
