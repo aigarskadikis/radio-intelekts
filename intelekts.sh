@@ -36,7 +36,7 @@ mpc clear
 generatenewsong=1
 
 #list all songs in playlist without skits
-allmusic=$(mpc ls | grep -v "^Speech")
+allmusic=$(mpc listall | grep -v "^Speech")
 
 #caunt how many songs is in playlist now
 skaits=$(mpc playlist | wc -l)
