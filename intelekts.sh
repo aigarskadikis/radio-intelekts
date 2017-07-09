@@ -51,7 +51,7 @@ if [ $? -ne 0 ]; then
   echo "$nextsong is not played today"
   echo "Lets add $nextsong"
   echo "$nextsong" | mpc add
-echo "$nextsong" >> /var/log/mpd/mpd.log
+  echo "$nextsong">> /var/log/mpd/mpd.log
   nextsongok=1
   else
   echo "$nextsong has been already played"
@@ -125,6 +125,7 @@ echo "Now it is time for skit.."
 					nextskitok=1
 					echo "Lets add $nextskit"
 					echo "$nextskit" | mpc add
+					echo "$nextskit">> /var/log/mpd/mpd.log
 				else
 					echo "$nextskit has been already played"
 					nextskitok=0
